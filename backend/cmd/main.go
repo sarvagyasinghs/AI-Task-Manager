@@ -215,7 +215,7 @@ func DeleteTask(c *gin.Context) {
 // ----- AI Suggestions Handler with ChatCompletion (GPT-3.5 Turbo) -----
 
 func AISuggestions(c *gin.Context) {
-	apiKey := "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"
+	apiKey := "OPENAI_API_KEY"
 	if apiKey == "" {
 		c.JSON(http.StatusOK, gin.H{"suggestions": "OPENAI_API_KEY not set. Provide a valid API key for personalized breakdowns."})
 		return
